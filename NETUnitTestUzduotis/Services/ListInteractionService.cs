@@ -13,9 +13,16 @@ namespace NETUnitTestUzduotis.Services
         private List<Cat> Cats { get; set; } = new List<Cat>();
         private List<Dog> Dogs { get; set; } = new List<Dog>();
 
+        private readonly IDatabaseService _databaseService;
+        public ListInteractionService(IDatabaseService databaseService)
+        {
+            _databaseService = databaseService;
+        }
+
         public void AddToCatList(Animal animal)
         {
             Cats.Add((Cat)animal);
+            _databaseService.InsertAnimal(animal);
         }
 
         public void AddToDogList(Animal animal)
@@ -43,6 +50,10 @@ namespace NETUnitTestUzduotis.Services
             else
                 return false;
         }
+        public Dog GetDogByIdFromDb(int id)
+        {
+            return _databaseService.GetDog(id);
+        }
     }
 
     public interface IListInteractionService
@@ -52,5 +63,6 @@ namespace NETUnitTestUzduotis.Services
         void AddToCatList(Animal animal);
         void AddToDogList(Animal animal);
         List<Cat> GetCatList();
+        Dog GetDogByIdFromDb(int id);
     }
 }
