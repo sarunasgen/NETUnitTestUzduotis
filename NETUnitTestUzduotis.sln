@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETUnitTestUzduotis", "NETUnitTestUzduotis\NETUnitTestUzduotis.csproj", "{3091BC74-9FA2-4F7A-BFB9-2EBCCAD7AF8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETUnitTestUzduotis", "NETUnitTestUzduotis\NETUnitTestUzduotis.csproj", "{3091BC74-9FA2-4F7A-BFB9-2EBCCAD7AF8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETUnitTestUzduotis.Tests", "NETUnitTestUzduotis.Tests\NETUnitTestUzduotis.Tests.csproj", "{A33E450E-613B-41FE-9816-BE1041394C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETUnitTestUzduotis.Tests", "NETUnitTestUzduotis.Tests\NETUnitTestUzduotis.Tests.csproj", "{A33E450E-613B-41FE-9816-BE1041394C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraUnitTestai", "ExtraUnitTestai\ExtraUnitTestai.csproj", "{41858C1D-A194-4C01-83CC-123850FCBF29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A33E450E-613B-41FE-9816-BE1041394C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33E450E-613B-41FE-9816-BE1041394C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33E450E-613B-41FE-9816-BE1041394C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41858C1D-A194-4C01-83CC-123850FCBF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41858C1D-A194-4C01-83CC-123850FCBF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41858C1D-A194-4C01-83CC-123850FCBF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41858C1D-A194-4C01-83CC-123850FCBF29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
